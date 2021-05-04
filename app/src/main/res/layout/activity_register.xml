@@ -7,23 +7,209 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context=".RegisterActivity"
-    >
+    android:background="@drawable/fondo_iniciolight">
 
 
+    <!-- OSCURECER IMAGEN -->
+    <!-- El alpha funciona para el degradado -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mascabado"
+        android:alpha="0.2"/>
+    <!-- FIN DE OSCURECIMIENTO JEJEJE -->
     <View
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:background="@color/yelous"/>
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/mascabado"
-        android:text="REGISTRO"
-        android:textSize="30dp"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:layout_marginTop="50dp"/>
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="REGISTRO"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/queso_partido"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+
+        <!-- INICIOOO -->
+        <!-- LINEAR LAYOUT - HORIZONTAL (USUARIO E ICONO) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@color/white">
+
+            <!-- ICONO DE USUARIO -->
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_person_24"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <!-- CAMPO DE TEXTO DE REGISTRO -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextCream"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <!-- CAMPO DE TEXTO QUE LE PERMITIRA INSERTAR USUARIO-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_registro_usuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cremita"
+                    android:hint="Nombre de usuario"
+                    android:inputType="textPersonName" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <!-- FIIIIIIIIIIIN -->
+
+
+        <!-- LINEAR LAYOUT - HORIZONTAL (CORREO E ICONO) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@color/white">
+
+            <!-- ICONO DE CORREO -->
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_email_24"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <!-- CAMPO DE TEXTO DE REGISTRO -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextCream"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <!-- CAMPO DE TEXTO QUE LE PERMITIRA INSERTAR CORREO-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_registro_correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cremita"
+                    android:hint="Correo electrónico"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- LINEAR LAYOUT - HORIZONTAL (CONTRASEÑA E ICONO) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@color/white">
+
+            <!-- ICONO DE CONTRASEÑA-->
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_lock_24"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <!-- CAMPO DE TEXTO DE REGISTRO -->
+            <!-- CAMPO DE TEXTO PARA CONTRASEÑA -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextCream"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_registro_clave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cremita"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- LINEAR LAYOUT - HORIZONTAL (CONTRASEÑA CONFIRMACIÓN E ICONO) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@color/white">
+
+            <!-- ICONO DE CONTRASEÑA CONFIRMACION-->
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_lock_24"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <!-- CAMPO DE TEXTO DE REGISTRO -->
+            <!-- CAMPO DE TEXTO PARA CONTRASEÑA CONFIRMACION -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextCream"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_registro_clave2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cremita"
+                    android:hint="Confirmar contraseña"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_registrarse"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:padding="20dp"
+            android:text="Registrarse"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    </LinearLayout>
+
 
 
 
