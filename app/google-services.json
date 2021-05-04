@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "575079289885",
+    "project_id": "saycheesedb",
+    "storage_bucket": "saycheesedb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575079289885:android:d80811c8aa1ebd9764e2f4",
+        "android_client_info": {
+          "package_name": "com.example.proyectofinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575079289885-g2l54ub7jma7k5u1ddrdrm6t8c70hca7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHCfL2aM1VB-NLC8_vUiz0uw5z4JYIfVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575079289885-g2l54ub7jma7k5u1ddrdrm6t8c70hca7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
