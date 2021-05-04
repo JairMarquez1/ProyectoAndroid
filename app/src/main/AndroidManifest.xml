@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinal">
         <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".Index" />
+        <activity android:name=".IndexActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ActionBar  actionBar = getSupportActionBar(); actionBar.hide();
 
         //(Instancia) Puente entre TextView y codigo de programacion (TEXTVIEW XML_ PAGINA LOGIN)
         text_registro = findViewById(R.id.textView_registro);
@@ -84,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         //--------Aqui termina la prueba----------------------------
 
 
-        Intent intent1 = new Intent(this, Index.class);
+        Intent intent1 = new Intent(this, IndexActivity.class);
         intent1.putExtra("email",email);
         intent1.putExtra("pass",pass);
         startActivity(intent1);
@@ -92,7 +91,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void CrearCuenta(View v){
-
+        Intent intentReg = new Intent(this,RegisterActivity.class);
+        startActivity(intentReg);
     }
 
 

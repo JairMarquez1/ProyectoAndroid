@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class Index extends AppCompatActivity {
+public class IndexActivity extends AppCompatActivity {
 
     private String[] nombres = {"@alma","@hector","@jair","@erubey","@rair"};
     private String[] descr = {"En la playa <3","Cenando con mis amigos","En el gimnasio","Jugando League of Legends :)","Prgramando en python"};
@@ -26,7 +26,6 @@ public class Index extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_index);
-        ActionBar actionBar = getSupportActionBar(); actionBar.hide();
         String email = getIntent().getStringExtra("email");
 
         listaPosts = new ArrayList<Post>();
