@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <!-- PALETA COLORES -->
+    <color name="yelous">#FFC107</color>
+    <color name="yelous_mas_yelous">#9E7F22</color>
+    <color name="cremita">#E3CF96</color>
+    <color name="mascabado">#403414</color>
 </resources>

@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -21,6 +22,9 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
 
     public EditText etEmail, etPass;
+
+    //Se crea propiedad de tipo Textview:
+    TextView text_registro;
     FirebaseFirestore db;
 
     @Override
@@ -28,6 +32,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ActionBar  actionBar = getSupportActionBar(); actionBar.hide();
+
+        //(Instancia) Puente entre TextView y codigo de programacion (TEXTVIEW XML_ PAGINA LOGIN)
+        text_registro = findViewById(R.id.textView_registro);
+
+
+        //Acciones a ejecutar cuando se de click al textview- REGISTRATE:
+        //Se llama a mandar al activity "Registrar".
+        text_registro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Se instancia una propiedad de tipo Intent, en la cual se manda
+                // a llamar a un nuevo activity, en este caso el activity de "Registro"
+                Intent intent_registro = new Intent(MainActivity.this,RegisterActivity.class);
+                startActivity(intent_registro);
+            }
+        });
+
+
     }
 
 
@@ -72,4 +94,7 @@ public class MainActivity extends AppCompatActivity {
     public void CrearCuenta(View v){
 
     }
+
+
+
 }
