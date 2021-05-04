@@ -21,7 +21,7 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
 
     public EditText etEmail, etPass;
-    FirebaseFirestore db = FirebaseFirestore.getInstance();
+    FirebaseFirestore db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,14 +32,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void IniciarSesion(View v){
+        db = FirebaseFirestore.getInstance();
         etEmail = findViewById(R.id.etEmail);
         etPass = findViewById(R.id.etPassword);
         String email = etEmail.getText().toString();
         String pass = etPass.getText().toString();
 
-        Intent intent1 = new Intent(this, Index.class);
-        intent1.putExtra("email",email);
-        intent1.putExtra("pass",pass);
 
         //Prueba de base de datos--------------------------
         Map<String, Object> user = new HashMap<>();
@@ -64,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
         //--------Aqui termina la prueba----------------------------
 
 
+        Intent intent1 = new Intent(this, Index.class);
+        intent1.putExtra("email",email);
+        intent1.putExtra("pass",pass);
         startActivity(intent1);
 
     }
