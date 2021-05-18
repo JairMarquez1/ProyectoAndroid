@@ -15,6 +15,12 @@ android {
         multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+
+        //FIX DE MULTIDEX:
+        //Cannot fit requested classes in a single dex file (# methods: 96224 > 65536) /FIX:
+        multiDexEnabled true //More info problem: https://frogames.es/solucion-a-error-con-el-dexfile-en-android-studionull-cannot-fit-requested-classes-in-a-single-dexfile/
+        //FIN FIX DE MULTIDEX
     }
 
     buildTypes {
@@ -42,6 +48,31 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+
+    //INICIO FIX
+    //More info problem: https://frogames.es/solucion-a-error-con-el-dexfile-en-android-studionull-cannot-fit-requested-classes-in-a-single-dexfile/
+    implementation 'androidx.multidex:multidex:2.0.1' //Cannot fit requested classes in a single dex file (# methods: n > 65536) /FIX:
+    //FIN FIX
+
+
+    // Import the BoM for the Firebase platform (NECESARIO PARA FIREBASE AUTH)
     implementation platform('com.google.firebase:firebase-bom:27.1.0')
     implementation 'com.google.firebase:firebase-analytics'
+
+
+    // -- FIREBASE AUTHENTICACION Y FIRESTORE-->
+    // Declare the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-auth'
+
+    // Declare the dependency for the Cloud Firestore library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-firestore'
+
+    //ESTA LIBRERIA ES SI QUEREMOS IMPLEMENTAR INICIO E SESIÓN CON GOOGLE :)
+    // Also declare the dependency for the Google Play services library and specify its version (Inicio de sesión con google)
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+
+
+
 }
