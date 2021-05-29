@@ -148,10 +148,13 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
         //--- fin prueba login
 
+
+        //--Borrar después
+        Intent activity_index = new Intent(MainActivity.this, IndexActivity.class);
+        startActivity(activity_index);
+        //--
 
         /*Intent intent1 = new Intent(this, IndexActivity.class);
         intent1.putExtra("email",email);
