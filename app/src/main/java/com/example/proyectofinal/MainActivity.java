@@ -169,9 +169,6 @@ public class MainActivity extends AppCompatActivity {
 //-------
     //METODOS DE VALIDACIONES:
 
-
-
-
     //METODO DE VALIDACIÓN DE CORREO: (REGEX)
     public boolean correo_valido(String email){
         String expression = "^[\\w\\.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$";
