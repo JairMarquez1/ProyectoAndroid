@@ -2,7 +2,7 @@
     <stroke
         android:color="@color/yelous" />
 
-    <solid android:color="@color/yelous"  />
+    <solid android:color="@color/cremita"  />
 
     <corners
         android:radius="5dp"

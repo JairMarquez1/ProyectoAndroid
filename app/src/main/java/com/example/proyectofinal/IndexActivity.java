@@ -119,6 +119,7 @@ public class IndexActivity extends AppCompatActivity {
         });
     }
 
+    //Metodo para elegir imagen:
     public void ElegirImagen(View v){
         Intent intentImg = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         intentImg.setType("image/");
@@ -136,6 +137,7 @@ public class IndexActivity extends AppCompatActivity {
         }
     }
 
+    //Metodo de subida de imagen:
     public void Subir(){
         //https://code.tutsplus.com/tutorials/image-upload-to-firebase-in-android-application--cms-29934   robado de aqui XD
         storage = FirebaseStorage.getInstance();
