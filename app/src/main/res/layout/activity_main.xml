@@ -51,9 +51,9 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_baseline_email_24"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_baseline_email_24" />
 
             <!-- CAMPO DE TEXTO DE REGISTRO -->
             <com.google.android.material.textfield.TextInputLayout
@@ -72,7 +72,8 @@
                     android:backgroundTint="@color/cremita"
                     android:hint="Correo electrónico"
                     android:inputType="textEmailAddress"
-                    android:paddingTop="20dp" />
+                    android:paddingTop="30dp"
+                    android:textColor="#000000" />
 
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
@@ -89,9 +90,9 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_baseline_lock_24"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_baseline_lock_24" />
 
             <!-- CAMPO DE TEXTO -->
             <!-- CAMPO DE TEXTO PARA CONTRASEÑA -->
@@ -109,7 +110,8 @@
                     android:backgroundTint="@color/cremita"
                     android:hint="Contraseña"
                     android:inputType="textPassword"
-                    android:paddingTop="20dp" />
+                    android:paddingTop="30dp"
+                    android:textColor="#000000" />
             </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>

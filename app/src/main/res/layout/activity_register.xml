@@ -30,7 +30,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
 
@@ -58,7 +58,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:background="@color/white"
+                android:background="#00FFFFFF"
                 android:orientation="horizontal">
 
                 <!-- ICONO DE USUARIO -->
@@ -66,7 +66,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="10dp"
                     android:src="@drawable/ic_baseline_person_24" />
 
                 <!-- CAMPO DE TEXTO DE REGISTRO -->
@@ -82,6 +82,7 @@
                         android:id="@+id/txt_registro_usuario"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
                         android:backgroundTint="@color/cremita"
                         android:hint="Nombre de usuario"
                         android:inputType="textPersonName"
@@ -98,7 +99,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:background="@color/white"
+                android:background="#00FFFFFF"
                 android:orientation="horizontal">
 
                 <!-- ICONO DE CORREO -->
@@ -106,7 +107,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="10dp"
                     android:src="@drawable/ic_baseline_email_24" />
 
                 <!-- CAMPO DE TEXTO DE REGISTRO -->
@@ -135,7 +136,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:background="@color/white"
+                android:background="#00FFFFFF"
                 android:orientation="horizontal">
 
                 <!-- ICONO DE CONTRASEÑA-->
@@ -143,7 +144,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="10dp"
                     android:src="@drawable/ic_baseline_lock_24" />
 
                 <!-- CAMPO DE TEXTO DE REGISTRO -->
@@ -171,7 +172,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:background="@color/white"
+                android:background="#00FFFFFF"
                 android:orientation="horizontal">
 
                 <!-- ICONO DE CONTRASEÑA CONFIRMACION-->
@@ -179,7 +180,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="10dp"
                     android:src="@drawable/ic_baseline_lock_24" />
 
                 <!-- CAMPO DE TEXTO DE REGISTRO -->
@@ -194,7 +195,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/txt_registro_clave2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:backgroundTint="@color/cremita"
                         android:hint="Confirmar contraseña"
                         android:inputType="textPassword"
